@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #333;
+        }
+        /* Navbar Section */
+        .navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo{
+            font-size: 28px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+        .nav-links{
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active{
+            color: #e91e63;
+            border-bottom: 2px solid #e91e63;
+            padding-bottom: 4px;
+        }
+        /* Hamburger menu for mobile */
+        .hamburger{
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+.about .clothes h1{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+.about .clothes p{
+    text-align: center;
+    margin: 35px;
+    color: gray;
+    font-size: 25px;
+}
+.about .clothes-box{
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:15px;
+}
+.about .clothes-box .clothes-card{
+    background: #9d9d9d;
+    width: 350px;
+    padding: 20px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.about .clothes-box .clothes-card:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+}
+.about .clothes .clothes-box img{
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.about .clothes .clothes-box img:hover{
+    transform: scale(1.1);
+
+}
+.about .clothes-box .clothes-card h1{
+    font-size: 35px;
+    color: gainsboro;
+    margin: 15px 0;
+
+}
+.about .clothes-box .clothes-card p{
+    color: white;
+    margin: 25px 0;
+    font-size: 17px;
+}
+.about .clothes-box .clothes-card .btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background: #f9004d;
+    top: 50px;
+    left: 4%;
+    margin-top: 10px;
+    margin-top: 8px;
+
+}
+.footer{
+    background-color: #f8f1f3;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-section{
+    flex: 1 1 200px;
+    margin: 20px;
+}
+.footer-section h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #d63384;
+}
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li a{
+    color: #555;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-section ul li a:hover{
+    color: #d63384;
+}
+.newsletter input[type="email"] {
+    padding: 8px;
+    width: 80px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.newsletter button{
+    padding: 8px 16px;
+    background-color: #d63384;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.footer-bottom{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+
+}
+ /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links{
+                display: none;
+                flex-direction: column;
+                background-color: #fff;
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                width: 180px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            
+        }
+     
+    
+    </style>
+</head>
+<body>
+    <!--Navbar Section--><nav class="navbar">
+        <div class="Glamourwear">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </div>
+    </nav>
+     <!--About page-->
+   <div class="about">
+   <div class="clothes">
+    <h1>Products</h1>
+    <p>----Clothes----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="IMG-20250804-WA0349.jpg">
+        <h1>13,000frs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="IMG-20250802-WA0111.jpg">
+        <h1>11,000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="IMG-20250804-WA0392.jpg">
+        <h1>10,000frs</h1>
+      </div>
+    </div>
+   </div>
+</div>
+ <div class="about">
+   <div class="clothes">
+    <p>----Trousers----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="IMG-20250804-WA0377.jpg">
+        <h1>10,000frs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="IMG-20250804-WA0372.jpg">
+        <h1>10,000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="IMG-20250804-WA0373.jpg">
+        <h1>10,000frs</h1>
+      </div>
+    </div>
+   </div>
+</div><div class="about">
+   <div class="clothes">
+    <p>----Gowns----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="IMG-20250804-WA0354.jpg">
+        <h1>8000frs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="IMG-20250403-WA0003.jpg">
+        <h1>8000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="IMG-20250804-WA0356.jpg">
+        <h1>8000frs</h1>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="about">
+   <div class="clothes">
+    <p>----Bags----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="OIP (18).webp">
+        <h1>20,000frs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="OIP (4).jpeg">
+        <h1>10,000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="th (11).webp">
+        <h1>14,000frs</h1>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="about">
+   <div class="clothes">
+    <p>----New arrivals----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="OIP (3).jpeg">
+        <h1>20,000frs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="download (6).webp">
+        <h1>23,000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="OIP (2).jpeg">
+        <h1>14,000frs</h1>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="about">
+   <div class="clothes">
+    <p>----Quality Wigs----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="IMG-20250802-WA0107.jpg">
+        <h1>70,000frs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="IMG-20250802-WA0105.jpg">
+        <h1>75,000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="IMG-20250802-WA0066.jpg">
+        <h1>30,000frs</h1>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="about">
+   <div class="clothes">
+    <p>----Accessories----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="OIP (20).webp">
+        <h1>40,000frs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="download (9).webp">
+        <h1>50,000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="download (8).webp">
+        <h1>30,000frs</h1>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="about">
+   <div class="clothes">
+    <p>----Affordable Shoes----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="IMG-20250629-WA0145.jpg">
+        <h1>15,000frsfrs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="IMG-20250629-WA0148.jpg">
+        <h1>15,000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="IMG-20250629-WA0149.jpg">
+        <h1>15,000frs</h1>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="about">
+   <div class="clothes">
+    <p>----Promotion----</p>
+    <div class="clothes-box">
+      <div class="clothes-card">
+        <img src="IMG-20250628-WA0058.jpg">
+        <h1>7000frs</h1>
+      </div>
+      <div class="clothes-card">
+        <img src="IMG-20250802-WA0122.jpg">
+        <h1>4000frs</h1>
+      </div>
+
+ <div class="clothes-card">
+        <img src="IMG-20250802-WA0123.jpg">
+        <h1>4000frs</h1>
+      </div>
+    </div>
+   </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <!--Company info-->
+        <div class="footer-section">
+            <h3>About us</h3>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!--Customer service-->
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">FQAs</a></li>
+                <li><a href="#">Shipping returns</a></li>
+                <li><a href="#">Size Guide</a></li>
+            </ul>
+        </div>
+        <!--Categories-->
+        <div class="footer-section">
+            <h3>Shop</h3>
+            <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+        <!--Newsletter-->
+        <div class="footer-section newsletter">
+            <h3>Subscribe</h3>
+            <p>Join our newsletter for the latest updates</p>
+            <form>
+                <input type="email" placeholder="Enteryour email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <!--Bottom footer-->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Modern Women. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

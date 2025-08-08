@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 60px;
+            background-color: #fff;
+            color: #333;
+        }
+        /* Navbar Section */
+        .navbar {
+          position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo{
+            font-size: 28px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+        .nav-links{
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active{
+            color: #e91e63;
+            border-bottom: 2px solid #e91e63;
+            padding-bottom: 4px;
+        }
+        /* Hamburger menu for mobile */
+        .hamburger{
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        .about-content{
+          scroll-margin-top: 70px;
+        }
+.about-content {
+    padding-top: 70px;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+.about-content h2{
+  margin-top: 60px;
+}
+.about-content h2{
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #cc3366;
+}
+.about-content h2{
+  font-size: 2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+.about-content p{
+  font-size:18px ;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about-content ul{
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.about-content ul li{
+  font-size: 18px;
+  line-height: 1.6;
+  max-width:800px ;
+  margin: 0 auto;
+}
+.about-cta{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 50px 20px;
+}
+.about-cta h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.cta-button{
+    display: inline-block;
+    background-color: #cc3366;
+    color:#fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+.cta-button:hover{
+    background-color: #a92b54;
+}
+.footer-bottom{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+
+} 
+/* Responsive */
+        @media (max-width: 768px) {
+            .nav-links{
+                display: none;
+                flex-direction: column;
+                background-color: #fff;
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                width: 180px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+          }
+    
+    </style>
+</head>
+<body>
+  <!--nAVBAR section-->
+    <nav class="navbar">
+        <div class="Glamourwear">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </div>
+    </nav>
+     
+    <secti0n class="about-content">
+    <div class="container">
+      <h2>Our Story</h2>
+      <p>Shopify was founded in 2020 with a vision to bring elegant, bold, and affordable
+        fashion to every woman.<br> 
+        We believe style should reflect personality, confidence, and power.
+      </p>
+      <h2>Our Mission</h2>
+      <p>
+        To empower women with clothing that makes them feel confident, beautiful, and 
+        unstoppable-every single day.
+      </p>
+      <h2>What Makes Us Unique</h2>
+      <ul>
+        <li>Curated fashion collections designed by women, for women.</li>
+        <li>
+          Ethically made with sustainability in mind.
+        </li>
+        <li>
+          Inclusive sizing for all body types
+        </li>
+      </ul>
+    </div>
+   </sectin>
+   <section class="about-cta">
+    <h2>Join the Shopify Movement</h2>
+    <a href="sho.html" class="cta-button">Shop Now</a>
+   </section>
+   <footer>
+     <!--Bottom footer-->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Modern Women. All rights reserved.</p>
+    </div>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #333;
+        }
+        /* Navbar Section */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo{
+            font-size: 28px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+        .nav-links{
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active{
+            color: #e91e63;
+            border-bottom: 2px solid #e91e63;
+            padding-bottom: 4px;
+        }
+        /* Hamburger menu for mobile */
+        .hamburger{
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+
+.shop-header{
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: #fceffb;
+    padding-top: 0;
+}
+.shop-header h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #b4005b;
+    margin-top: 60px;
+}
+.shop-header p{
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+}
+.categories{
+    padding: 40px 20px;
+    text-align: center;
+}
+.categories h2{
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 45px;
+}
+.category-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.category-box{
+    background-color: #ffeaf1;
+    color: #b4005b;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.category-box:hover{
+    background-color: #f9d9e8;
+}
+ /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links{
+                display: none;
+                flex-direction: column;
+                background-color: #fff;
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                width: 180px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            
+        }
+     
+   
+    </style>
+</head>
+<body>
+     <!--nAVBAR section-->
+    <nav class="navbar">
+        <div class="Glamourwear">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </div>
+    </nav>
+    <header class="shop-header">
+        <h1>Welcome to Our Shop</h1>
+        <p>
+            Discover the latest in women's fashion curated just for you. 
+            From elegant dresses and chic tops to statement accessories
+             and everyday essentials.
+        </p>
+        <p>
+            Whether you're dressing for a night out, the office, or lounging in style- we've
+            got something for everymoment.
+        </p>
+    </header>
+    <section class="categories">
+        <h2>Shop by category</h2>
+        <div class="C">
+            <a href="#" class="category-box">Dresses</a>
+            <a href="#" class="category-box">Tops</a>
+            <a href="#" class="category-box">Bottoms</a>
+            <a href="#" class="category-box">Shoes</a>
+            <a href="#" class="category-box">Accessories</a>
+            <a href="#" class="category-box">New Arrivals</a>
+        </div>
+    </section>
+</body>
+</html>
